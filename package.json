@@ -1,0 +1,35 @@
+{
+    "name": "reactberg",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@wordpress/block-editor": "^11.0.0",
+        "@wordpress/components": "^23.0.0",
+        "@wordpress/core-data": "^6.0.0",
+        "@wordpress/data": "^8.0.0",
+        "@wordpress/edit-post": "^7.0.0",
+        "@wordpress/icons": "^9.14.0",
+        "@wordpress/plugins": "^5.0.0",
+        "@wordpress/scripts": "^25.0.0"
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "plugin-zip": "wp-scripts plugin-zip",
+        "format": "wp-scripts format",
+        "start": "wp-scripts start --hot",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "files": [
+        "build/**.*",
+        "*.php",
+        "*.js"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "postcss": "^8.4.20",
+        "prettier-plugin-tailwindcss": "^0.2.1",
+        "tailwindcss": "^3.2.4"
+    }
+}

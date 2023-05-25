@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .components-autocomplete__result:has(.cf__class__suggestion) {
+        @apply min-h-0 bg-slate-50 py-1 font-medium hover:bg-indigo-100 hover:text-purple-700;
+    }
+}
+
+.gp-autocomplete {
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+    overflow-y: scroll;
+    background: hsla(0, 0%, 0%, 0.04);
+    border-radius: 0px;
+    padding: 16px;
+    font-weight: 500;
+}
+
+.components-autocomplete__popover .components-popover__content {
+    padding: 0px !important;
+}
+.gp_panel_body {
+    padding: 0 !important;
+}
+.gp_panel_body > .components-panel__body-title {
+    margin: 0 !important;
+}
